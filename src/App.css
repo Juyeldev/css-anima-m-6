@@ -1,0 +1,43 @@
+.main {
+	border: 2px solid blue;
+height: 400px;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	perspective: 500px;
+
+    /* overflow: hidden;
+    position: relative; */
+
+}
+
+.box1 {
+    /* position: absolute; */
+	background-color: red;
+	height: 150px;
+	width: 150px;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	transform-origin: top left;
+}
+.box2 {
+    /* position: absolute; */
+	background-color: rgb(46, 9, 9);
+	height: 150px;
+	width: 150px;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+	transform-origin: top right;
+}
+
+
+
+.box1:hover {
+	transform: rotateY(90deg);
+}
+
+.box2:hover{
+	transform: rotateY(-90deg);
+}

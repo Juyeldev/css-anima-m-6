@@ -1,0 +1,17 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    animation: moving 3s ease-in-out alternate-reverse infinite ;
+
+}
+@keyframes moving {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(500px);
+    }
+    
+}
